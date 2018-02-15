@@ -1,0 +1,55 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ru.roman.visiitcard.fragments.MyCardFragment"
+    android:orientation="vertical">
+
+    <!-- TODO: Update blank fragment layout -->
+<!--    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Моя визитка" />-->
+
+    <Button
+        android:text="Начать поиск"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/startSearch" />
+
+    <Button
+        android:text="Включить Bluetooth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/onBluetooth" />
+
+    <Button
+        android:text="Выключить Bluetooth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/offBluetooth" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_info"
+        android:gravity="center_horizontal" />
+
+    <TextView
+        android:text="Список найденных устройств"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/listDevices"
+        android:gravity="center_horizontal" />
+
+    <ListView
+        android:id="@+id/listInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="#b5b5b5"
+        android:dividerHeight="1dp"
+        android:foreground="?android:selectableItemBackground" />
+
+
+</LinearLayout>

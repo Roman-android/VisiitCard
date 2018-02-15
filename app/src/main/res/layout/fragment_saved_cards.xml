@@ -1,0 +1,138 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context="ru.roman.visiitcard.fragments.SavedCardsFragment">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/but_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                app:srcCompat="@drawable/ic_essential_regular_62_info" />
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-20dp"
+            android:text="Сохраненные визитки" />
+
+        <Button
+            android:id="@+id/btnChoiceNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Выбрать номер (визитку)" />
+
+        <TextView
+            android:id="@+id/textSMS"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat.Light.Widget.PopupMenu.Small" />
+
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checkedButton="@+id/userQR"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/userQR"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="QR-код свой" />
+
+            <RadioButton
+                android:id="@+id/contactQR"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="QR-код контакта" />
+        </RadioGroup>
+
+        <ImageView
+            android:id="@+id/user_qr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:contentDescription="QR-код пользователя" />
+
+        <ImageView
+            android:id="@+id/contact_qr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="QR-код выбранного контакта" />
+
+        <!--
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Выберите номер кнопкой Обзор или введите цифры" />
+    -->
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="96dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/numToSms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="Введите номер"
+                android:inputType="phone" />
+
+            <Button
+                android:id="@+id/butSrc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Обзор" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnSms"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Отправить СМС" />
+
+        <Button
+            android:id="@+id/btnQR"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_orange_light"
+            android:text="Сгенерировать QR код контакта" />
+
+        <Button
+            android:id="@+id/btnReadQR"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_purple"
+            android:text="Считать QR код" />
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">Визитки</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="ok">OK</string>
+    <string name="permission_camera_rationale">Access to the camera is needed for detection</string>
+    <string name="no_camera_permission">This application cannot run because it does not have the camera permission.  The application will now exit.</string>
+    <string name="low_storage_error">Face detector dependencies cannot be downloaded due to low device storage</string>
+    <string name="title_activity_main">Barcode Reader Sample</string>
+    <string name="barcode_header">Click &quot;Read Barcode&quot; to read a barcode</string>
+    <string name="read_barcode">Read Barcode</string>
+    <string name="auto_focus">Auto Focus</string>
+    <string name="use_flash">Use Flash</string>
+    <string name="barcode_success">Barcode read successfully</string>
+    <string name="barcode_failure">No barcode captured</string>
+    <string name="barcode_error">"Error reading barcode: %1$s"</string>
+
+    <string name="tel_title">Номер телефона</string>
+    <string name="tel_summary">Изменить номер телефона</string>
+
+    <string name="name_title">Ваше имя</string>
+    <string name="name_summary">Изменить имя</string>
+
+    <string name="email_title">Адрес электронной почты</string>
+    <string name="email_summary">Изменить адрес электронной почты</string>
+
+    <string name="settings">Разрешить</string>
+    <string name="cancel">Отмена</string>
+
+    <string name="info">
+        <b>Раздел справки о программе</b>\n<br />
+        <b>Боковое меню</b>\n
+        <b>Раздел "Настройки"</b> - здесь вы можете посмотреть текущие данные, которые установлены или поменять их\n<br/>
+        <b>Основной экран</b>\n
+        <b>Кнопка "Выбрать номер (визитку)":</b>
+        - здесь вы можете выбрать номер телефона, которым хотите поделиться.
+        <b>Кнопка "Сгенерировать QR-код":</b>
+        - при нажатии на эту кнопку будет сгенерирован QR-код (сначала необходимо выбрать номер при помощи кнопки "Выбрать номер (визитку)"),
+        который будет отсканирован другим телефоном и сохранен на нем в списке контактов.
+        <b>Кнопка "Считать QR-код":</b>
+        - кнопка для считывания QR-кода, сгенерированного при помощи кнопки "Сгенерировать QR-код" и последующего сохранения этого контакта
+        в списке контактов
+
+    </string>
+
+</resources>

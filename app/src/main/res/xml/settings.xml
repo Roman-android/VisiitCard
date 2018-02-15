@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <EditTextPreference
+        android:key="name_user"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="@string/name_title" />
+    <EditTextPreference
+        android:inputType="phone"
+        android:key="tel_user"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="@string/tel_title" />
+    <EditTextPreference
+        android:key="email_user"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="@string/email_title" />
+</PreferenceScreen>
